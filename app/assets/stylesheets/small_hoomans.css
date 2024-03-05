@@ -1,0 +1,49 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: white;
+  height: 100%;
+  overflow: auto;
+}
+
+.grid-item {
+  position: relative;
+  padding: 50px;
+  margin: 10%;
+  max-width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.grid-item {
+  position: relative;
+}
+
+.modal-content {
+  display: none;
+  position: absolute;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  bottom: -45px;
+}
+
+.grid-item:hover .modal-content {
+  display: block;
+
+}
+
+.grid-item:hover {
+  cursor: pointer;
+}

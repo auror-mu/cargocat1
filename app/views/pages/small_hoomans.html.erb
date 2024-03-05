@@ -1,0 +1,41 @@
+
+  <% images = [
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709209288/small_humans/miniod_g5jwtt.png', alt: 'tiny Aude' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709209289/small_humans/social1_oyox1e.png', alt: 'tiny vecchietta' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709230688/small_humans/doggo1_migs06.png', alt: 'doggo' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709209291/small_humans/zorro_xhxhfl.png', alt: 'zorro' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709230625/small_humans/0402_2_pf4cpf.png', alt: 'philatelic bird' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709209286/small_humans/dashboard_handicap1_y1pnob.png', alt: 'crowd' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709230721/small_humans/narvalo_mygt2f.png', alt: "narvalo" },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709209285/small_humans/0407_1_pnj4ud.png', alt: "watering tulips" },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709209288/small_humans/marinette2_xincir.png', alt: 'marinette' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709209289/small_humans/touriste__p72uoh.png', alt: 'tall tourist' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709230665/small_humans/baleine_phtsji.png', alt: 'big whale' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709209286/small_humans/dame_livre_qhczxy.png', alt: 'big reading' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709209285/small_humans/0104_3_dztphr.png', alt: 'meeting' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709217514/small_humans/running_girl_ck8vos.png', alt: 'runner' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709209290/small_humans/ysl_smoking1_e8urad.png', alt: 'YSL' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709220798/small_humans/mec_hoodie_vforlh.png', alt: 'student' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709220808/small_humans/touriste_nb0c3t.png', alt: 'tiny tourist in Marseille' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709209287/small_humans/lire2_d9qg9y.png', alt: "small reading" },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709230724/small_humans/ourse_cadeau_ddgokz.png', alt: 'happy new bear' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709209287/small_humans/guide1_aw3qnj.png', alt: 'guide' },
+
+ ]%>
+  <div class="grid-container">
+  <% images.each do |image| %>
+    <div class="grid-item" style="background-image: url('<%= image[:path] %>');">
+      <div class="modal-content">
+        <p><%= image[:alt].html_safe %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
+<%= link_to "back home <-", root_path, class: "link" %>
+
+git init
+git add -A
+git commit -m "commit message"
+git remote add origin git@github.com:auror-mu/cargocat1.git
+git pull origin master
+git push -u origin master
