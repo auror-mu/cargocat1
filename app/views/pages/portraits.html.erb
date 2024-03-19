@@ -1,0 +1,32 @@
+
+  <% images = [
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709638768/portraits/joconde_mona_lisa_lnicw2.png', alt: 'mona lisa' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709639365/portraits/lautrec_xnqn6u.png', alt: 'toulouse lautrec' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709639383/portraits/pompon_ours_jxyiz6.png', alt: 'pompon bear' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709639371/portraits/liberte_peuple_delacroix_psmrqy.png', alt: 'liberté' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709639349/portraits/bonhommes_fond_oxr4v0.png', alt: 'warhol, darwin, aretha, <br>mozart and kusama' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709823911/portraits/monet_xy5dzd.png', alt: 'monet' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709638795/portraits/femmes_tech_th4gj9.png', alt: "Lovelace from the past,<br>Lovelace from the future" },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709636455/portraits/kusama_ldechq.png', alt: "yayoy kusama" },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710873567/portraits/louisXIV_yeiapc.png', alt: "louis XIV" },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709824269/portraits/matisse_femme_chapeau_p2uifi.png', alt: 'femme à chapeau,<br>matisse' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709638785/portraits/gerda_taro_u0dvvh.png', alt: 'gerda taro' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710871185/portraits/hendrix_abnwon.png', alt: 'jimi hendrix' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710871181/portraits/hadid_dessins_e5xuso.png', alt: 'zaha hadid' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710871174/portraits/0902moretti_h6tvky.png', alt: 'nanni moretti' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710873047/portraits/simone_biles_ats0oz.png', alt: 'simone biles' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710871911/portraits/van_gogh_l4rvfc.png', alt: 'vincent van gogh' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709639387/portraits/sophie_calle_bsvdgp.png', alt: 'sophie calle' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710873306/portraits/jeff_rwexp0.png', alt: 'jeff goldblum' }
+
+ ]%>
+  <div class="grid-container">
+  <% images.each do |image| %>
+    <div class="grid-item" style="background-image: url('<%= image[:path] %>');">
+      <div class="modal-content">
+        <p><%= image[:alt].html_safe %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
+<%= link_to "back home <-", root_path, class: "link" %>

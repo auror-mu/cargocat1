@@ -1,6 +1,5 @@
 html {
   height: 100%;
-  text-align: center;
 }
 
 body {
@@ -10,21 +9,46 @@ body {
   background-color: #f0f0f0;
   position: relative;
 }
-.column{
-  text-align: left;
-  width: 900px;
-}
-.profile_pic{
+
+
+
+.profile_pic {
   width: 700px;
+  margin: 0 auto;
 }
-.link{
+
+.link {
   text-decoration: none;
   color: black;
 }
-.credits{
+
+.credits {
   position: absolute;
-  bottom: 0;
   right: 0;
   margin-bottom: 10px;
   margin-right: 10px;
+}
+
+.column {
+  position: relative;
+  text-align: left;
+  width: 1000px;
+}
+
+.container-question {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 100px; /* Center the container */
+  width: 100%; /* Inherit the width of the parent */
+  max-width: 1000px; /* !!!!!*/
+  grid-gap: 30px;
+}
+
+.question {
+  margin-right: 10px;
+
+}
+
+.container-question img {
+  max-width: 100%; /* !!! */
 }

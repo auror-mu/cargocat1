@@ -7,4 +7,6 @@ class PagesController < ApplicationController
   end
   def small_hoomans
   end
+  def portraits
+  end
 end
