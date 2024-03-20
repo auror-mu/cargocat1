@@ -20,6 +20,7 @@
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710873306/portraits/jeff_rwexp0.png', alt: 'jeff goldblum' }
 
  ]%>
+ <div class="col">
   <div class="grid-container">
   <% images.each do |image| %>
     <div class="grid-item" style="background-image: url('<%= image[:path] %>');">
@@ -28,5 +29,6 @@
       </div>
     </div>
   <% end %>
+</div>
 </div>
 <button class="button-74" role="button"><%= link_to "back home", root_path, class: "link" %></button>

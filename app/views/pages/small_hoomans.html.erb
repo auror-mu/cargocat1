@@ -4,6 +4,7 @@
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710938193/tiny_creatures/social1_rqmewg.png', alt: 'tiny vecchietta' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710938442/tiny_creatures/doggo1_sedm5c.png', alt: 'doggo' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710938486/tiny_creatures/emoji_canova_favqfv.png', alt: 'amore e psyche' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710938280/tiny_creatures/dame_livre_xqzx9g.png', alt: "big reading" },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710938297/tiny_creatures/0402_2_zvonxb.png', alt: 'philatelic bird' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710938283/tiny_creatures/dashboard_handicap1_sklbxk.png', alt: 'crowd' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710938324/tiny_creatures/narvalo_lnpfu0.png', alt: "narvalo" },
@@ -14,13 +15,14 @@
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710938375/tiny_creatures/0104_3_bfjrts.png', alt: 'meeting' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710938327/tiny_creatures/running_girl_jhojv1.png', alt: 'runner' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710938227/tiny_creatures/ysl_smoking1_rnzsnd.png', alt: 'YSL' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710951327/tiny_creatures/0604_pipazf.png', alt: 'worker' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710938317/tiny_creatures/mec_hoodie_qwiv51.png', alt: 'student' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710938360/tiny_creatures/touriste_tvvllo.png', alt: 'tiny tourist in Marseille' },
-      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710938280/tiny_creatures/dame_livre_xqzx9g.png', alt: "big reading" },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710938237/tiny_creatures/ourse_cadeau_e9clba.png', alt: 'happy new bear' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710951342/tiny_creatures/voiture3_yr8lx0.png', alt: 'sad doggo in sad car' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710938274/tiny_creatures/guide1_oehbps.png', alt: 'guide' },
-
  ]%>
+  <div class="col">
   <div class="grid-container">
   <% images.each do |image| %>
     <div class="grid-item" style="background-image: url('<%= image[:path] %>');">
@@ -29,5 +31,6 @@
       </div>
     </div>
   <% end %>
+</div>
 </div>
  <button class="button-74" role="button"><%= link_to "back home", root_path, class: "link" %></button>

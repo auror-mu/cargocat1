@@ -4,8 +4,8 @@
 </div>
 
     <% images = [
-      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710876373/youth_illustrations/croco_cover_mhpygo.png', alt: 'cover' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710844114/youth_illustrations/croco_text_gjmkly.png', alt: 'text' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710876373/youth_illustrations/croco_cover_mhpygo.png', alt: 'cover' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709831643/youth_illustrations/croco3_jj4mu7.png', alt: 'image1' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709831826/youth_illustrations/croco4_rjabxu.png', alt: 'image2' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709831105/youth_illustrations/croco1_ehdmpr.png', alt: 'image3' },
@@ -17,28 +17,18 @@
     ]
 %>
 <div class="container-youth">
+  <% images[0..5].each_slice(2) do |row| %>
     <div class="row-youth">
-    <% images[0..1].each do |image| %>
-    <div class="image"><img src="<%= image[:path] %>" alt="<%= image[:alt] %>"></div>
-    <% end %>
+      <% row.each do |image| %>
+        <div class="image"><img src="<%= image[:path] %>" alt="<%= image[:alt] %>"></div>
+      <% end %>
     </div>
-    <div class="row-youth">
-    <% images[2..3].each do |image| %>
-    <div class="image"><img src="<%= image[:path] %>" alt="<%= image[:alt] %>"></div>
-    <% end %>
-    </div>
-     <div class="row-youth">
-    <% images[4..5].each do |image| %>
-    <div class="image"><img src="<%= image[:path] %>" alt="<%= image[:alt] %>"></div>
-    <% end %>
-    </div>
-
-    <div class="row-youth">
+  <% end %>
+  <div class="row-youth">
     <% images[6..9].each do |image| %>
-    <div class="image"><img src="<%= image[:path] %>" alt="<%= image[:alt] %>"></div>
+      <div class="image"><img src="<%= image[:path] %>" alt="<%= image[:alt] %>"></div>
     <% end %>
-    </div>
-
+  </div>
 </div>
 
  <button class="button-74" role="button"><%= link_to "back home", root_path, class: "link" %></button>
