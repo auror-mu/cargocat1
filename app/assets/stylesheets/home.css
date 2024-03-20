@@ -10,12 +10,13 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #ffffff;
-  background-image: linear-gradient(0deg, #d0bed0 0%, #ffffff 100%);
+  background-image: linear-gradient(0deg, #e6e0e6 0%, #ffffff 100%);
 }
 
 .container{
   margin-top: 70px;
   display: grid;
+  height: 100%;
   grid-template-rows: repeat(5, 1fr); /* 3 rows with equal height */
   grid-template-columns: 1fr 1fr; /* 2 columns with equal width */
   gap: 15px;

@@ -9,4 +9,6 @@ class PagesController < ApplicationController
   end
   def portraits
   end
+  def pages
+  end
 end

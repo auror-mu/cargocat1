@@ -6,7 +6,6 @@ body {
   font-family: 'Karla', sans-serif;
   height: 100%;
   margin: 0;
-  background-color: #f0f0f0;
   position: relative;
 }
 
@@ -46,6 +45,7 @@ body {
 
 .question {
   margin-right: 10px;
+  width: 200px;
 
 }
 
