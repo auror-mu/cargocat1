@@ -52,3 +52,7 @@ body {
 .container-question img {
   max-width: 100%; /* !!! */
 }
+.p_small{
+  margin-top: 60px;
+  font-size: 12px;
+}

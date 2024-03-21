@@ -19,7 +19,11 @@
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710949852/places/0201_3_e497jv.png', alt: 'egypt' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710939189/places/06meb_fbxppm.png', alt: 'kumano nachi-taisha, wakayama' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710951597/tiny_creatures/0305_2_iav80c.png', alt: 'sanlaz, paris' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711024162/places/zentrum_paulklee_eeezw3.png', alt: 'paul klee center, bern' },
  ]%>
+ <div>
+  <h2>guess the place !</h2>
+  </div>
 <div class="col">
   <div class="grid-container">
   <% images.each do |image| %>
@@ -31,4 +35,4 @@
   <% end %>
 </div>
 </div>
-<button class="button-74" role="button"><%= link_to "back home", root_path, class: "link" %></button>
+<button class="back_home" role="button"><%= link_to "home", root_path, class: "link" %></button>

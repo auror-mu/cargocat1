@@ -1,0 +1,32 @@
+    <% images = [
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710887667/science/0307_dlxbsg.gif', alt: 'synapsis' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710887735/science/wasser_heliodome_gmbymx.png', alt: 'earth rotation' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710887709/science/shifters_dashboard2_1_yfedu3.png', alt: 'earth not going<br>well at all' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710887713/science/shifters1_1_t8o7wu.jpg', alt: 'earth going very well' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711018170/science/earth_foio4t.png', alt: 'just earth' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710887670/science/grison_phytoremediation1_qh5dr3.gif', alt: 'phytoremediation, or how plants<br>recover contaminated soils' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709670872/science/rontgen_rayonsX_dvkftn.png', alt: 'X ray' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710887696/science/corps_jtyv8o.png', alt: 'human body' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710887683/science/0206_rtln4b.png', alt: 'human vascular system' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709670872/science/swarzie_muscles_d8lc04.png', alt: 'human muscles' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710887679/science/0201_nmkerd.png', alt: 'human brain' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709670874/science/titan_cellule_jfxzm1.png', alt: 'human cell' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710887692/science/0703_jhl5rl.png', alt: 'normal vision, hyperopia and myopia' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710887674/science/bacteries_alcool1_sc7x9q.jpg', alt: 'exterior of a bacteria' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1709670876/science/virus_twhdmn.png', alt: 'virus structure' },
+    ]
+%>
+
+
+ <div class="col">
+  <div class="grid-container-science">
+  <% images.each do |image| %>
+    <div class="grid-item-science" style="background-image: url('<%= image[:path] %>');">
+        <div class="subtitle"><p><%= image[:alt].html_safe %></p>
+        </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<button class="back_home" role="button"><%= link_to "home", root_path, class: "link" %></button>
