@@ -21,9 +21,7 @@
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1710951597/tiny_creatures/0305_2_iav80c.png', alt: 'sanlaz, paris' },
       { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711024162/places/zentrum_paulklee_eeezw3.png', alt: 'paul klee center, bern' },
  ]%>
- <div>
-  <h2>guess the place !</h2>
-  </div>
+
 <div class="col">
   <div class="grid-container">
   <% images.each do |image| %>
@@ -35,4 +33,5 @@
   <% end %>
 </div>
 </div>
-<button class="back_home" role="button"><%= link_to "home", root_path, class: "link" %></button>
+<p>did you guess the place?</p>
+<button class="back_home" role="button"><%= link_to "back home", root_path, class: "link" %></button>

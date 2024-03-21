@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/portraits', to: 'pages#portraits', as: 'portraits'
   get '/places', to: 'pages#places', as: 'places'
   get '/science_illustrations', to: 'pages#science_illustrations', as: 'science_illustrations'
+  get '/tech_illustrations', to: 'pages#tech_illustrations', as: 'tech_illustrations'
   # Defines the root path route ("/")
   # root "articles#index"
 end

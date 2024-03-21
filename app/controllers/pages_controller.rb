@@ -13,4 +13,6 @@ class PagesController < ApplicationController
   end
   def science_illustrations
   end
+  def tech_illustrations
+  end
 end

@@ -1,0 +1,35 @@
+    <% images = [
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711027952/tech/0204_velo_pyi6xl.gif', alt: 'bike evolution' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711027936/tech/adams_bitcoin_tolxze.jpg', alt: 'bitcoin price' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711028014/tech/1304_gtasgi.png', alt: 'beauty canon in artistic movements' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711034711/tech/L05N4_1_ivcclv.gif', alt: 'golden ratio in the birth of venus by botticelli' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711028013/tech/0506_aero_zppclc.png', alt: 'aerodynamic, train vs shinkansen' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711027992/tech/0304_carte_ripsoq.png', alt: "impressionists' trail by train" },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711027943/tech/0404_prisme_akplnj.gif', alt: 'triangular prism dispersing light' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711027999/tech/0305plain_szz4ck.png', alt: 'ocean stratification' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711027960/tech/0101_3_dhps7r.png', alt: 'actual plan of louvre' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711028018/tech/carte0102_VC_f6qmz8.png', alt: 'french-speakers in the world' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711028023/tech/eng0202_lll82i.png', alt: 'angkor temple' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711028014/tech/0103_tcrdsd.png', alt: 'french government' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711028002/tech/0402_2_vb1666.png', alt: 'photovoltaic battery' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711028008/tech/0505_zdjfam.png', alt: 'instructions to cubism ' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711028010/tech/0202_ef90xn.png', alt: 'roman church axonometry' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711027984/tech/0103_2_dfuzsg.png', alt: 'mosque axonometry' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711027988/tech/cezanne_cafetiereL5N1_m7kao5.gif', alt: 'cubist anatomy, caffettiera' },
+      { path: 'https://res.cloudinary.com/dncaa02l9/image/upload/v1711027990/tech/0206_frpbw8.png', alt: 'water cycle' },
+   ]
+%>
+
+
+ <div class="col">
+  <div class="grid-container-science">
+  <% images.each do |image| %>
+    <div class="grid-item-science" style="background-image: url('<%= image[:path] %>');">
+        <div class="subtitle"><p><%= image[:alt].html_safe %></p>
+        </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<button class="back_home" role="button"><%= link_to "home", root_path, class: "link" %></button>

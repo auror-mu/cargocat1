@@ -1,19 +1,16 @@
-html {
+html, body {
   height: 100%;
+  margin: 0;
 }
 
 body {
   font-family: 'Karla', sans-serif;
-  height: 100%;
-  margin: 0;
   position: relative;
 }
 
-
-
 .profile_pic {
-  width: 700px;
-  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -22,37 +19,34 @@ body {
 }
 
 .credits {
-  position: absolute;
-  right: 0;
-  margin-bottom: 10px;
-  margin-right: 10px;
+  text-align: right;
+  font-size: 12px;
 }
 
 .column {
-  position: relative;
   text-align: left;
-  width: 1000px;
+  max-width: 70%;
+  padding: 0 20px; /* Add some padding for better readability */
+  box-sizing: border-box; /* Include padding in the width */
 }
 
 .container-question {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 100px; /* Center the container */
-  width: 100%; /* Inherit the width of the parent */
-  max-width: 1000px; /* !!!!!*/
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column width dynamically */
+  margin-top: 50px; /* Center the container */
+  grid-gap: 20px;
 }
 
 .question {
-  margin-right: 10px;
-  width: 200px;
-
+  max-width: 100%;
 }
 
 .container-question img {
-  max-width: 100%; /* !!! */
+  max-width: 80%;
+  height: auto; /* Maintain aspect ratio */
 }
-.p_small{
-  margin-top: 60px;
+
+.p_small {
   font-size: 12px;
+  margin: 20px 0; /* Add some margin for better readability */
 }
