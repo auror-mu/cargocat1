@@ -45,3 +45,19 @@ a {
 .grid-item:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 800px) {
+  .grid-container {
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+
+    max-height: 100%;
+    overflow: auto;
+  }
+  .modal-content {
+    display: block;
+  
+  }
+
+}
