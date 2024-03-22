@@ -24,5 +24,21 @@
   text-align: center;
   bottom: -45px;
 }
-/* devo utilizzare lo stesso modello di portraits
-ma con le caratteristiche di youth */
+
+@media screen and (max-width: 800px) {
+  .grid-container-science {
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+
+    max-height: 100%;
+    overflow: auto;
+  }
+  .subtitle{
+    position: absolute;
+    color: black;
+    padding: 0;
+    text-align: center;
+    bottom: -0;
+  }
+}

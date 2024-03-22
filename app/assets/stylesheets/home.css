@@ -125,6 +125,9 @@ body{
   .container{
    display: block;
   }
+  .item{
+    height: 200px;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
