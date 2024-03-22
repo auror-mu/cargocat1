@@ -17,3 +17,10 @@
   max-width: 100%;
   height: auto;
 }
+@media screen and (max-width: 800px) {
+  .row-youth {
+    display: block;
+    padding: 20px;
+  }
+
+}
